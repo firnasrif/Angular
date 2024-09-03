@@ -1,23 +1,46 @@
 <div class="wrapper">
-  <div class="sidenav">
-    <div>logo</div>
-    <div>
-      <ul>
-        <li><span>Dashboard</span></li>
-        <li><span>Student Details</span></li>
-        <li><span>Student Record</span>
-          <ul>
-            <li>Grade 01</li>
-            <li>Grade 02</li>
-            <li>Grade 03</li>
-            <li>Grade 04</li>
-            <li>Grade 05</li>
-          </ul>
-        </li>
-      </ul>
+  <aside id="sidebar" class="js-sidebar" [ngClass]="{ 'collapsed': isCollapsed }">
+
+    <div class="" id="" >
+      <div class="sidebar-logo m-5 logoname">
+        <a id="logoname">logo</a>
+      </div>
+      <div>
+        <ul class="sidebar-nav">
+          <li class="sidebar-item "><a class="sidebar-link" routerLink="/" routerLinkActive="active" >Dashboard</a></li>
+          <li class="sidebar-item "><a class="sidebar-link">Student Details</a></li>
+          <li class="sidebar-item "><a class="sidebar-link collapsed" data-bs-target="#pages"
+              data-bs-toggle="collapse" aria-expanded="false">Student Record</a>
+            <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+              <li class="sidebar-item ms-4"> <a class="sidebar-link">Grade 01</a></li>
+              <li class="sidebar-item ms-4"> <a class="sidebar-link">Grade 02</a></li>
+              <li class="sidebar-item ms-4"><a class="sidebar-link">Grade 03</a></li>
+              <li class="sidebar-item ms-4"><a class="sidebar-link">Grade 04</a></li>
+              <li class="sidebar-item ms-4"><a class="sidebar-link">Grade 05</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <div>
-    Dashboard
+  </aside>
+  <div class="main">
+    <header class="sticky-top">
+
+      <nav class="navbar navbar-expand px-md-2 py-0 border-bottom ">
+
+        <button class="btn " id="sidebar-toggle" (click)="toggleSidebar()" type="button">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+
+
+      </nav>
+    </header>
+    <main class="content  px-md-2 py-2 position-relative">
+
+      <div class="container-fluid scrollarea" id="content-section">
+Dashboard
+      </div>
+    </main>
+
   </div>
 </div>
