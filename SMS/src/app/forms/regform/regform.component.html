@@ -1,77 +1,82 @@
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#regform">
-    Launch demo modal
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade " id="regform" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog  modal-dialog-centered ">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Student Details</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <form>
+  Enrolle
+</button>
 
-                <div class="mb-3">
-                  <label for="exampleInputFull" class="form-label">Full Name</label>
-                  <input type="textbox" class="form-control" id="">
-                </div>
+<!-- Modal -->
+<div class="modal fade " id="regform" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Student Details</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="conrainer-fuild">
+            <div class="row">
+              <div class="mb-3 col-12 col-md-6">
+                <label for="exampleInputFull" class="form-label">Full Name</label>
+                <input type="textbox" class="form-control" id="">
+              </div>
 
-                <div class="mb-3">
-                    <label for="exampleInputInitial" class="form-label">Name with Initial</label>
-                    <input type="textbox" class="form-control" id="">
-                  </div>
+              <div class="mb-3 col-12 col-md-6">
+                <label for="exampleInputInitial" class="form-label">Name with Initial</label>
+                <input type="textbox" class="form-control" id="">
+              </div>
 
-                  <div class="mb-3">
-                    <label for="exampleInputIndex" class="form-label">Index No</label>
-                    <input type="textbox" class="form-control" id="">
-                  </div>
+              <div class="mb-3 col-12 col-md-6">
+                <label for="exampleInputIndex" class="form-label">Index No</label>
+                <input type="textbox" class="form-control" id="">
+              </div>
 
-                  <div class="mb-3">
-                    <label for="exampleInputAddress" class="form-label">Address</label>
-                    <input type="textarea" class="form-control" id="">
-                  </div>
+              <div class="mb-3 col-12 col-md-6">
+                <label for="exampleInputDate" class="form-label">Date of Birth</label>
+                <input type="date" class="form-control" id="">
+              </div>
+              
+              <div class="mb-3 ">
+                <label for="exampleInputAddress" class="form-label">Address</label>
+                <input type="textarea" class="form-control" id="">
+              </div>
 
-                  <div class="mb-3">
-                    <label for="exampleInputDate" class="form-label">Date of Birth</label>
-                    <input type="date" class="form-control" id="">
-                  </div>
 
-                  <div class="mb-3">
-                    <label for="exampleInputGender" class="form-check-label">Gender</label>
-                    <input type="radio" name="gender" class="form-check-input" id="">Male
-                    <input type="radio" name="gender" class="" id="">Female
-                  </div>
 
-                <div class="mb-3">
-                  <label for="exampleInputEmail" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="">
-                </div>
+              <div class="mb-3 col-12 col-md-6 d-flex align-items-center">
+                <label for="exampleInputGender" class="form-check-label">Gender</label>
+                <input type="radio" name="gender" class="form-check-input" id="">Male
+                <input type="radio" name="gender" class="" id="">Female
+              </div>
 
-                <div class="mb-3">
-                    <label for="exampleInputAddmission" class="form-label">Addmission Data</label>
-                    <input type="email" class="form-control" id="">
-                  </div>
+              <div class="mb-3 col-12 col-md-6">
+                <label for="exampleInputEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="">
+              </div>
 
-                  <div class="mb-3">
-                    <label for="exampleInput" class="form-label">Addmission Data</label>
-                    <input type="email" class="form-control" id="">
-                  </div>
+              <div class="mb-3 col-12 col-md-6">
+                <label for="exampleInputAddmission" class="form-label">Addmission Data</label>
+                <input type="email" class="form-control" id="">
+              </div>
 
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
+              <div class="mb-3 col-12 col-md-6">
+                <label for="exampleInput" class="form-label">Addmission Data</label>
+                <input type="email" class="form-control" id="">
+              </div>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+
+              <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Save </button>
+        <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Save & Closs</button>
       </div>
     </div>
   </div>
+</div>
